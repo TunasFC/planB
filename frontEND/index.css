@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+body{
+    background: #eee ;
+}
+
+#side_nav{
+    min-width: 200px;
+    background-color: lightgray;
+    max-width: 200px;
+    transition: all 0.2s;
+}
+
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar li.active{
+    background: #3c942c;
+    border-radius: 8px;
+}
+
+.sidebar li{
+    border-radius: 8px;
+}
+
+.sidebar li:hover{
+    background-color: gray;
+}
+
+.sidebar li.active:hover {
+    background-color: #3c942c;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover {
+    color: #d98200;
+}
+
+.sidebar li a{
+    color: #d98200;
+}
+
+@media(max-width: 767px){
+    #side_nav{
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+    #side_nav.active{
+        margin-left: 0;
+    } 
+}
